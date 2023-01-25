@@ -1,0 +1,148 @@
+*,
+*:before,
+  *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #eaeff5;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+h1{
+    color: rgb(236, 130, 30);
+  border-width: 1px solid red; 
+}
+.searchInput{
+  margin-top: 10px;
+  margin-right: 20px;
+   border-radius: 10px;
+   height: 40px;
+   width: 200px;
+   border-color: #939697;
+}
+
+.container{
+ margin: 5%;
+ height: 200vh;
+ background-color: azure;
+}
+.searchbox{
+    display: flex;
+    justify-content: center;
+}
+/* #addTaskInput{
+    position: relative;
+    padding: 30px 20px;
+} */
+#addTaskInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+#addTaskBtn, #saveTaskBtn, #deleteAllBtn{
+    margin: 10px;
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+#deleteAllBtn{
+    background-color: #e02b0b !important;
+}
+
+.tableContent{margin-top: 10%;
+    background-color:#eecece;
+    height: 150vh;
+}
+
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+#addedTaskList{
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-color:#eecece
+  }
+  .tdItem{
+    width: 75%;
+  }
+  th{
+    width: 5%;
+  }
+  td{
+    margin: 2%;
+  }
+
+.editbtn,.deletebtn{
+    padding: 5px;
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 10%;
+    width: 70px;
+    border-radius: 5px;
+    float: right;
+    
+}
+.deletebtn{
+    background-color: #f50b0b;
+}
+
+

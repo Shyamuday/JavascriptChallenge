@@ -6,10 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="main.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script src="Index.js"></script>
+    <div>
+
+    </div>
+
+    <nav class="navbar">
+        <div class="heading">
+            <h1>To Do List App</h1>
+        </div>
+
+        <div class="searchInput">
+
+            <input class="searchInput" type="search" placeholder="Search here" id="searchTextBox">
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="newTask">
+            <div class="searchbox">
+                <input type="text" placeholder="Add your task" id="addTaskInput">
+                <input type="hidden" id="saveindex">
+            </div>
+            <button id="deleteAllBtn">Delete All</button>
+            <button id="addTaskBtn">Add Task</button>
+            <button id="saveTaskBtn" style="display: none;">Save Task</button>
+        </div>
+        <div class="tableContent">
+            <table id="addedTaskList" border="1">
+
+            </table>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
