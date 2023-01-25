@@ -6,11 +6,11 @@ let addTaskInputval;
 addTaskBtn.addEventListener("click", function () {
   addTaskInputval = addTaskInput.value;
   if (addTaskInputval.trim() != 0) {
-    let webtask = localStorage.getItem("showTask");
-    if (webtask == null) {
+    let webTask = localStorage.getItem("showTask");
+    if (webTask == null) {
       taskList = [];
     } else {
-      taskList = JSON.parse(webtask);
+      taskList = JSON.parse(webTask);
     }
     taskList.push(addTaskInputval);
     localStorage.setItem("showTask", JSON.stringify(taskList));
@@ -20,11 +20,11 @@ addTaskBtn.addEventListener("click", function () {
 });
 
 function showtask() {
-  let webtask = localStorage.getItem("showTask");
-  if (webtask == null) {
+  let webTask = localStorage.getItem("showTask");
+  if (webTask == null) {
     taskList = [];
   } else {
-    taskList = JSON.parse(webtask);
+    taskList = JSON.parse(webTask);
   }
   let tabelInnerData = "";
   let addedTaskList = document.getElementById("addedTaskList");
@@ -44,8 +44,8 @@ function editTask(index) {
   let addTAskBtn = document.getElementById("addTaskBtn");
   let saveTaskBtn = document.getElementById("saveTaskBtn");
   saveindex.value = index;
-  let webtask = localStorage.getItem("showTask");
-  let taskList = JSON.parse(webtask);
+  let webTask = localStorage.getItem("showTask");
+  let taskList = JSON.parse(webTask);
   addTaskInput.value = taskList[index];
   addTAskBtn.style.display = "none";
   saveTaskBtn.style.display = "block";
@@ -53,8 +53,8 @@ function editTask(index) {
 
 let saveTaskBtn = document.getElementById("saveTaskBtn");
 saveTaskBtn.addEventListener("click", function () {
-  let webtask = localStorage.getItem("showTask");
-  let taskList = JSON.parse(webtask);
+  let webTask = localStorage.getItem("showTask");
+  let taskList = JSON.parse(webTask);
   let saveindex = document.getElementById("saveindex").value;
   taskList[saveindex] = addTaskInput.value;
   saveTaskBtn.style.display = "none";
@@ -65,8 +65,8 @@ saveTaskBtn.addEventListener("click", function () {
 });
 
 function deleteItem(index) {
-  let webtask = localStorage.getItem("showTask");
-  let taskList = JSON.parse(webtask);
+  let webTask = localStorage.getItem("showTask");
+  let taskList = JSON.parse(webTask);
   taskList.splice(index, 1);
   localStorage.setItem("showTask", JSON.stringify(taskList));
   showtask();
@@ -76,12 +76,12 @@ let deleteAllBtn = document.getElementById("deleteAllBtn");
 deleteAllBtn.addEventListener("click", function () {
   let saveTaskBtn = document.getElementById("saveTaskBtn");
   let addTaskBtn = document.getElementById("addTaskBtn");
-  let webtask = localStorage.getItem("showTask");
-  let taskList = JSON.parse(webtask);
-  if (webtask == null) {
+  let webTask = localStorage.getItem("showTask");
+  let taskList = JSON.parse(webTask);
+  if (webTask == null) {
     taskList = [];
   } else {
-    taskList = JSON.parse(webtask);
+    taskList = JSON.parse(webTask);
     taskList = [];
   }
 
