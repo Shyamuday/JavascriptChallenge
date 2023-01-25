@@ -16,7 +16,6 @@ addTaskBtn.addEventListener("click", function () {
     localStorage.setItem("localTask", JSON.stringify(taskList));
     addTaskInput.value = "";
   }
-
   showTask();
 });
 

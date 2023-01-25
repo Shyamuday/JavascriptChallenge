@@ -41,10 +41,7 @@ h1{
     display: flex;
     justify-content: center;
 }
-/* #addTaskInput{
-    position: relative;
-    padding: 30px 20px;
-} */
+
 #addTaskInput {
     margin-left: auto;
     margin-right: auto;
@@ -89,27 +86,9 @@ h1{
     height: 150vh;
 }
 
-#tasks{
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    background-color: #ffffff;
-    padding: 30px 20px;
-    margin-top: 10px;
-}
 
-.task{
-    border-radius: 5px;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #939697;
-    cursor: pointer;
-    background-color: #c5e1e6;
-    height: 50px;
-    margin-bottom: 8px;
-    padding: 5px 10px;
-    display: flex;
-}
+
+
 
 #addedTaskList{
     width: 100%;
