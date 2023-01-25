@@ -93,12 +93,12 @@ deleteAllBtn.addEventListener("click", function () {
 
 let searchTextBox = document.getElementById("searchTextBox");
 searchTextBox.addEventListener("input", function () {
-  let trList = document.querySelector("tr");
+  let trList = document.querySelectorAll("tr");
   Array.from(trList).forEach(function (item) {
-    let serchedText = item.getElementsByTagName("td")[0].innerText;
+    let searchedText = item.getElementsByTagName("td")[0].innerText;
     let searchTextBoxval = searchTextBox.value;
     let re = new RegExp(searchTextBoxval, "gi");
-    if (serchedText.match(re)) {
+    if (searchedText.match(re)) {
       item.style.display = "table-row";
     } else {
       item.style.display = "none";
